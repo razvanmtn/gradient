@@ -8,6 +8,9 @@
 
 <style scoped>
     button {
+        position: fixed;
+        top: 1rem;
+        left: 1rem;
         padding: 0.25rem;
         border-radius: 50%;
         border: 0;

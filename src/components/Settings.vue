@@ -1,7 +1,7 @@
 <script setup>
     import { ref, watch } from 'vue';
 
-    const emit = defineEmits(['changeColor']);
+    const emit = defineEmits(['changeColor', 'close']);
 
     const type = ref('solid');
 
@@ -23,7 +23,10 @@
 
 <template>
     <div class="settings">
-        <h2>Settings panel</h2>
+        <div class="settings-top">
+            <h2>Settings panel</h2>
+            <button type="button" @click="emit('close')">x</button>
+        </div>
 
         <select name="type" v-model="type">
             <option value="solid">Solid color</option>
@@ -53,14 +56,31 @@
 
 <style scoped>
     .settings {
-        border: 1px solid var(--color-gray);
+        border-right: 1px solid var(--color-gray);
         background: var(--color-white);
-        border-radius: 1rem;
-        padding: 2rem;
+        border-radius: 0;
+        padding: 1.5rem 1.5rem;
         width: 300px;
-        min-height: 400px;
+        min-height: 100vh;
         position: fixed;
-        top: 5rem;
-        left: 1rem;
+        left: 0;
+        top: 0;
+        box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.08);
+    }
+
+    .settings-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    button {
+        background: transparent;
+        border: 0;
+    }
+
+    button:hover {
+        cursor: pointer;
     }
 </style>

@@ -14,5 +14,8 @@
         padding: 2rem;
         width: 300px;
         min-height: 400px;
+        position: fixed;
+        top: 5rem;
+        left: 1rem;
     }
 </style>

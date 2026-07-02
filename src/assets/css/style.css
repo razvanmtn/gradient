@@ -5,6 +5,7 @@
     --color-background: #ecf0f1;
     --color-white: #ffffff;
     --color-gray: #d4d7d7;
+    --font-family: "Work Sans", sans-serif;
 }
 
 * {
@@ -13,6 +14,7 @@
 
 html {
     font-size: 12px;
+    font-family: var(--font-family);
 }
 
 body {
@@ -24,7 +26,9 @@ h1 {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 h3, p {

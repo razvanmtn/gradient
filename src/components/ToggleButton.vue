@@ -10,8 +10,8 @@
     button {
         padding: 0.25rem;
         border-radius: 50%;
-        border: 2px solid var(--color-accent);
-        background: var(--color-accent);
+        border: 0;
+        background: var(--color-dark-gray);
         display: flex;
         align-items: center;
         justify-content: center;

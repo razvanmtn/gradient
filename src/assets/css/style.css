@@ -1,0 +1,32 @@
+@import 'reset.css';
+
+:root {
+    --color-accent: #3498db;
+    --color-background: #ecf0f1;
+    --color-white: #ffffff;
+    --color-gray: #d4d7d7;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 12px;
+}
+
+body {
+    background: var(--color-background);
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3, p {
+    font-size: 1rem;
+}
